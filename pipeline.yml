@@ -1,0 +1,19 @@
+---
+jobs:
+- name: thin-image
+  public: true
+  plan:
+  - get: tasks
+  - task: build-jar
+    file: tasks/build-jar/build-jar.yml
+  - task: generate-maven-repo
+    file: tasks/generate-maven-repo/generate-maven-repo.yml
+  - task: build-image
+    file: tasks/build-image/build-image.yml
+
+resources:
+- name: tasks
+  type: git
+  source:
+    uri: https://github.com/markfisher/concourse-spike.git
+
