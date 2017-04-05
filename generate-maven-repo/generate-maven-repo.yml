@@ -9,8 +9,11 @@ image_resource:
 
 inputs:
 - name: tasks
-- name: repository 
+- name: target 
+
+outputs:
+- name: repository
 
 run:
-  path: ./tasks/build-image/build-image.sh
+  path: ./tasks/generate-maven-repo/generate-maven-repo.sh
 
