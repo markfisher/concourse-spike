@@ -4,12 +4,13 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: busybox 
+    repository: maven
+    tag: '3.3.9-jdk-8-alpine'
 
 inputs:
+- name: tasks
 - name: target 
 
 run:
-  path: ls
-  args: ['-laR'] 
+  path: ./tasks/build-image/build-image.sh
 
