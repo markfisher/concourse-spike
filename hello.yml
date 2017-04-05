@@ -6,9 +6,6 @@ image_resource:
   source:
     repository: busybox 
 
-inputs:
-- name: target 
-
 run:
   path: echo
   args: ['Hello World'] 
