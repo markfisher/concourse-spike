@@ -9,13 +9,10 @@ image_resource:
 
 inputs:
 - name: tasks
-  path: build-jar
 
 outputs:
 - name: target
 
 run:
-  path: ls
-  args: ['-laR']
-#  path: ./tasks/build-jar/build-jar.sh 
+  path: ./tasks/build-jar/build-jar.sh 
 
