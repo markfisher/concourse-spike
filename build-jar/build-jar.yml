@@ -15,5 +15,7 @@ outputs:
 - name: target
 
 run:
-  path: ./tasks/build-jar/build-jar.sh 
+  path: ls
+  args: ['laR']
+#  path: ./tasks/build-jar/build-jar.sh 
 
