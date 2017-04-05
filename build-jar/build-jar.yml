@@ -15,5 +15,5 @@ outputs:
 - name: target
 
 run:
-  path: ./build-jar/build-jar.sh 
+  path: ./tasks/build-jar/build-jar.sh 
 
