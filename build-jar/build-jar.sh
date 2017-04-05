@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd build-jar
+cd tasks/build-jar
 
 mvn clean package
